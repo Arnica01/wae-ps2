@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @basic.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @basic.description %>
+</p>
+
+<p>
+  <strong> New Category:</strong>
+  <%= @basic.category %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_basic_path(@basic) %> |
+<%= link_to 'Back', basics_path %>

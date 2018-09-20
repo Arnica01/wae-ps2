@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <head>
+
+
+
+  	<div align="right">
+<%= form_tag(basics_quotations_search_path,  :method => :get) do %>
+  Search Quotes <%= text_field_tag :query %>
+  <%= submit_tag 'Search' , name: nil%>
+<% end %>
+</div>
+
+  	<div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <title>Quotation</title>
+</nav>
+  
+  </div>
+   
+    <%= csrf_meta_tags %>
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  
+  
+
+
+    <%= yield %> 
+
+
+
+     
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
+    
+<a href="/basics/exportXML" class="btn btn-outline-info" style="text-decoration: none, color: inherit;" >XML</a> 
+ <br /> 
+ <a style="margin-top:1em" href="/basics/exportJSON" class="btn btn-outline-info" style="text-decoration: none, color: inherit;" >JSON</a>
+
+
+<!-- Bottom -->
+<div class="bottom">
+  <div class="container">
+
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="copyright">
+
+          <p>© Copyright <a href="#">web</a> 2018. All Rights Reserved.
+          </p>
+        </div>
+      </div><!-- /.col-md-12 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div>
+
+<!-- Go Top -->
+<a class="go-top">
+  <i class="fa fa-angle-up"></i>
+</a>
+</body>
+</html>
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+            
+
+      
+
+
+     
+
+    
+
+
+
+
+
+

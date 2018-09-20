@@ -1,0 +1,40 @@
+<%= form_with(model: basic, local: true) do |form| %>
+  <% if basic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(basic.errors.count, "error") %> prohibited this basic from being saved:</h2>
+
+      <ul>
+      <% basic.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :basic_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quotes %>
+    <%= form.text_area :description, id: :basic_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category %>
+    <%= form.text_field :category, id: :new_category %>
+  </div>
+
+
+
+
+
+
+ 
+  
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
